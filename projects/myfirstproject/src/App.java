@@ -6,7 +6,7 @@ public class App {
         double width = 0;
         double height = 0;
         double area = 0;
-        
+         
        Scanner scanner = new Scanner(System.in);
        System.out.print("Enter your name:");
        String name = scanner.nextLine();
