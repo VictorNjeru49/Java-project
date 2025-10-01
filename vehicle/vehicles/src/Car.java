@@ -9,5 +9,14 @@ public class Car {
        isRunning = true;
        System.out.println("You start the engine!");
     }
-    
+    void stop(){
+        isRunning = false;
+        System.out.println("You stop the engine!");
+    }
+    void brake(){
+        System.out.println("You have applied the brake!");
+    }
+    void drive(){
+        System.out.printf("You are driving a %s %s\n", make, model);
+    }
 }
