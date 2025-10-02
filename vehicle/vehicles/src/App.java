@@ -1,14 +1,24 @@
 public class App {
     public static void main(String[] args) {
 
+        Employee employee = new Employee("Rebues", "Hagrid", 50000);
+        employee.showSalary();
+
+        Person person = new Person("Tom", "Riddle");
+        person.showName();
+
         Dog dog = new Dog();
         Cat cat = new Cat();
+        Fish fish = new Fish();
         Plant plant = new Plant();
 
         dog.eat();
         dog.speak();
+        dog.move();
         cat.eat();
         cat.speak();
+        cat.move();
+        fish.move();
         plant.photosynthesize();
 
         Friend friend1 = new Friend("Spongebob");
@@ -19,7 +29,7 @@ public class App {
         System.out.println(Friend.numoffriends);
         Friend.showfriend();
 
-        Car car = new Car();
+        Car car = new Car("Ford", "Mustang", "Red",2025);
         car.start();
         car.drive();
         car.brake();
@@ -43,13 +53,15 @@ public class App {
             vehicle.drive();
         }
 
-        Student student1 = new Student("spongebob", 23, 3.3);
-        Student student2 = new Student("patrick", 29, 2.5);
+        Student student1 = new Student("Spongebob", "Squarepants", 23, 3.3);
+        Student student2 = new Student("Patrick", "Star", 29, 2.5);
 
         System.out.println(student1.name +" "+ student1.age +" "+ student1.gpa +" "+ student1.isEnrolled);
         student1.study();
+        student1.showGPA();
         System.out.println(student2.name +" "+ student2.age +" "+ student2.gpa +" "+ student2.isEnrolled);
         student2.study();
+        student2.showGPA();
 
 
         User user1 = new User("Spongebob");
