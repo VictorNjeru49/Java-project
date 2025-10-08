@@ -2,11 +2,13 @@ public class Car {
     private final String model;
     private String color;
     private int price;
+    Engine engine;
 
-    Car(String model, String color, int price){
+    Car(String model, String color, int price, String engineType ){
         this.model = model;
         this.color = color;
         this.price = price;
+        this.engine = new Engine(engineType);
     }
 
     String getModel(){
@@ -31,6 +33,9 @@ public class Car {
        }
     }
 
+    void start(){
+        System.out.println("You have started "+ model);
+    }
     // Car car = new Car("Mustang", "Red", 100000);
     
     // car.setColor("Blue");
